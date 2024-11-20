@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Main } from "./styled-components/AppStyle"
 import Sun from "/images/icon-sun.svg"
 import Moon from "/images/icon-moon.svg"
+import DevFinder from "./tsx-components/DevFinder";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -16,7 +17,7 @@ function App() {
             <img src={darkMode ? Sun : Moon} alt={darkMode ? "Sun" : "Moon"}/>
           </div>
         </div>
-        
+        <DevFinder darkMode={`${darkMode}`}></DevFinder>
       </div>
     </Main>
   )

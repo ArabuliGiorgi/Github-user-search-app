@@ -171,6 +171,110 @@ const Search = styled.div<{darkmode: string}>`
             }
         }
     }
+
+    @media only screen and (min-width: 720px){
+        gap: 24px;
+
+        .search-bar{
+            min-height: 69px;
+            padding: 9.5px 10px 9.5px 32px;
+            position: relative;
+
+            img{
+                height: 24px;
+            }
+            input{
+                margin: 0 110px 0 24px;
+
+                font-size: 18px;
+            }
+            input::placeholder{
+                font-size: 18px;
+            }
+            button{
+                height: 50px;
+                padding: 0 23px 0 24px;
+
+                h1{
+                    font-size: 16px;
+                    line-height: 23.7px;
+                }
+            }
+            #result-error{
+                position: absolute;
+                right: 130px;
+                top: 24px;
+            }
+        }
+        #search-result{
+            padding: 40px;
+
+            #avatar{
+                height: 117px;
+            }
+            .head-info{
+                margin: 12px 0 38px;
+                padding-left: 158px;
+                min-height: 91px;
+            }
+            #name{
+                font-size: 26px;
+                line-height: 38.51px;
+                margin-bottom: 2px;
+            }
+            #login{
+                font-size: 16px;
+                line-height: 23.7px;
+                margin-bottom: 4px;
+            }
+            #created-at{
+                font-size: 15px;
+                line-height: 22.22px;
+            }
+            #bio{                
+                font-size: 15px;
+                margin-bottom: 32px;
+            }
+            .stats{
+                padding: 0 32px;
+                margin-bottom: 30px;
+
+                .stats-divs{
+                    width: 136px;
+                    height: 53px;
+                    align-items: start;
+
+                    .stats-fonts{
+                        font-size: 13px;
+                        line-height: 19.25px;
+                    }
+                    .stats-numbers{
+                        font-size: 22px;
+                        line-height: 32.58px;
+                    }
+                }
+            }
+            .footer-info{
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto;
+                gap: 19px;
+                
+                #blog-div{
+                    grid-row: 2/3;
+                    grid-column: 1/2;
+                }
+                .footer-info-divs{
+                    gap: 16px;
+
+                    h1{
+                        font-size: 15px;
+                        line-height: 22.22px;
+                    }
+                }
+            }
+        }
+    }
 `
 
 export {Search}

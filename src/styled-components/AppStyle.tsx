@@ -34,6 +34,10 @@ const Main = styled.div<{darkmode: string}>`
             height: 20px;
         }
     }
+
+    @media only screen and (min-width: 720px){
+        padding: 140px 97px 140px;
+    }
 `
 
 export {Main}

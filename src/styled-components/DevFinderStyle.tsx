@@ -185,7 +185,6 @@ const Search = styled.div<{darkmode: string}>`
             }
             input{
                 margin: 0 110px 0 24px;
-
                 font-size: 18px;
             }
             input::placeholder{
@@ -272,6 +271,48 @@ const Search = styled.div<{darkmode: string}>`
                         line-height: 22.22px;
                     }
                 }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1400px){
+        .search-bar{
+            input{
+                margin-right: 130px;
+            }
+            #result-error{
+                right: 140px;
+            }
+        }
+        #search-result{
+            padding: 48px;
+            display: flex;
+            align-items: start;
+            gap: 37px;
+
+            #avatar{
+                position: static;
+            }
+            .head-info{
+                margin: 0 0 20px;
+                padding-left: 0;
+                min-height: 65px;
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto;
+            }
+            #login{
+                margin-bottom: 0;
+            }
+            #created-at{
+                grid-column: 2/3;
+                grid-row: 1/2;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+            }
+            .stats{
+                margin-bottom: 37px;
             }
         }
     }

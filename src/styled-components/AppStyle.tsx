@@ -38,6 +38,11 @@ const Main = styled.div<{darkmode: string}>`
     @media only screen and (min-width: 720px){
         padding: 140px 97px 140px;
     }
+
+    @media only screen and (min-width: 1400px){
+        padding: 50px 0 50px;
+        align-items: center;
+    }
 `
 
 export {Main}

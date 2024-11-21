@@ -74,7 +74,7 @@ const DevFinder: React.FC<{
                         <h1 id="login">@{userInfo.login}</h1>
                         <h1 id="created-at">Joined {userInfo.created_at}</h1>
                     </div>
-                    <h1 id="bio" className={`${userInfo.bio === null ? 'hidden' : 'block'}`}>{userInfo.bio}</h1>
+                    <h1 id="bio">{userInfo.bio === null ? 'This profile has no bio' : userInfo.bio}</h1>
                     <div className="stats">
                         <div className="stats-divs">
                             <h1 className="stats-fonts">Repos</h1>
